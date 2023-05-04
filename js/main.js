@@ -1022,7 +1022,7 @@
         animation: 'fade',
         animationInSpeed: 200,
         animationOutSpeed: 200,
-        scrollText: '<i class="fas fa-caret-up"></i>',
+        scrollText: '<p>⇑</p>',
         activeOverlay: false,
     });
 
