@@ -1085,6 +1085,12 @@ ul.minicart .cart-price .new {
     transform: translateX(-50%);
     top: -62px;
     z-index: 9;
+
+}
+.sese {
+    max-height: 70px ; 
+    width: auto; 
+    
 }
 
 .third-header-bg .navbar-wrap ul.left {
@@ -7885,4 +7891,19 @@ ul.minicart .cart-price .new {
 
 .home-six-footer .copyright-wrap {
     padding: 31px 0;
+}
+@media only screen and (max-width: 600px) {
+    .main-header {
+        max-height: 100px !important;
+        margin-top: 0% !important;
+        background-color: #000;
+
+    }
+    .sese {
+        top: 1;
+    }
+    .zuzu {
+
+    }
+    
 }

@@ -28,6 +28,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -49,9 +53,9 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="main-menu">
-                            <nav>
+                            <nav class="zuzu" >
                                 <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.jpg" style="max-height: 70px ; width: auto; margin-left: -130px;" alt="Logo"></a>
+                                    <a href="index.html"><img class="sese" src="img/logo/logo.jpg" alt="Logo"></a>
                                 </div>
                                 <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                     <ul>
@@ -116,15 +120,85 @@
                     </div>
                 </div>
             </div>
+            <style>
+                    .ball-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+.ball {
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+}
+
+.ball:nth-child(1) {
+    left: 0%;
+    animation-delay: 0s;
+}
+
+.ball:nth-child(2) {
+    left: 20%;
+    animation-delay: 0.6s;
+}
+
+.ball:nth-child(3) {
+    left: 40%;
+    animation-delay: 1.2s;
+}
+
+.ball:nth-child(4) {
+    left: 60%;
+    animation-delay: 1.8s;
+}
+
+.ball:nth-child(5) {
+    left: 80%;
+    animation-delay: 2.4s;
+}
+
+.ball:nth-child(6) {
+    right: 0%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+            </style>
+            <div class="ball-container">
+                <img class="ball" src="/s.svg" alt="Soccer Ball">
+                <img class="ball" src="/s.svg" alt="Soccer Ball">
+                <img class="ball" src="/s.svg" alt="Soccer Ball">
+                <img class="ball" src="/s.svg" alt="Soccer Ball">
+                <img class="ball" src="/s.svg" alt="Soccer Ball">
+                <img class="ball" src="/s.svg" alt="Soccer Ball">
+            </div>
         </section>
-        <!-- slider-area-end -->
 
         <!-- features-area -->
-        <section id="about" class="features-area about-bg " style="height: 90vh;">
+        <section id="about" class="features-area about-bg " style="height: 90vh;">        <!-- slider-area-end -->
+  
             <div class="overlay"  >
             <div class="container ">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
+                    <div class="col-xl-6 col-lg-8">          <br><br><br>
                         <div class="section-title title-style-two text-center mb-60">
                             <h2><span></span> About Us</h2>
                         </div>
@@ -149,7 +223,7 @@
          
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
+                    <div class="col-xl-6 col-lg-8"><br><br><br><br>
                         <div class="section-title title-style-two text-center mb-60">
                             <h2><span></span>The Trophy</h2>
 
@@ -455,7 +529,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="copyright-text">
-                            <p>Copyright © 2022 <a href="index.htm">PENALDO</a>. Designed with <i class="fa fa-heart"></i> by <a href="https://t.me/anonymcreator" target="_blank">AnonymCreator</a>.</p>
+                            <p>Copyright © 2022 <a href="index.htm">PENALDO</a>. Designed with <i class="fa fa-heart"></i> by <a href="https://t.me/anonymcreator" target="_blank">PepeDev</a>.</p>
                         </div>
                     </div>
                 </div>
