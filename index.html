@@ -38,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <style>
         .parallax1 {
-           min-height: 100vh;
+            min-height: 100vh;
             background-image: url('./img/slider/slider_bg02.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -49,14 +49,16 @@
             max-width: 100vw;
             height: 100%;
         }
+
         .parallax2 {
             min-height: 100vh;
             background-image: url('./img/bg/pepejuve.png');
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed; 
-            max-width: 100vw;   
+            background-attachment: fixed;
+            max-width: 100vw;
         }
+
         .parallax3 {
             min-height: 100vh;
             background-image: url('./img/bg/thirdbanner.png');
@@ -66,16 +68,16 @@
             max-width: 100vw;
         }
 
-    section {
-        position: relative !important;
-        min-height: 100vh !important;
-        max-width: 100vw !important;
-        overflow-y: hidden !important;
-    }
+        section {
+            position: relative !important;
+            min-height: 100vh !important;
+            max-width: 100vw !important;
+            overflow-y: hidden !important;
+        }
     </style>
 </head>
 
-<body style="height: 100%; max-width: 100vw; margin: 0;">
+<body style="max-height: 100% !important; max-width: 100vw; margin: 0;">
 
     <!-- preloader -->
     <div id="preloader">
@@ -101,13 +103,13 @@
                                 <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                     <ul>
                                         <li class="show"><a href="#about">About</a>
-                                        
+
                                         </li>
                                         <li><a href="#">Roadmap</a>
-                                         
+
                                         </li>
                                         <li><a href="#about">Tokenomics</a>
-                                       
+
                                         </li>
                                     </ul>
                                 </div>
@@ -133,445 +135,420 @@
     <!-- header-area-end -->
 
     <!-- main-area -->
-    <main style="height: fit-content;" >
+    <main style="height: fit-content;">
         <div class="parallax1" data-scroll data-scroll-background>
-        <!-- slider-area -->
-        <section id="about" class="slider-area " style="max-width: 100vw; overflow-x: hidden; ">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-9" style="height:90vh;">
-                        <div class="slider-content text-center">
-                            <h6 class="wow fadeInDown" data-wow-delay=".2s">INTRODUCING</h6>
-                            <h2   style="font-family: 'Saira Stencil One', cursive !important; letter-spacing: 3px;"  class="tlt fix" data-in-effect="fadeInLeft"><span>PENALDO</span></h2>
+            <!-- slider-area -->
+            <section id="about" class="slider-area " style="max-width: 100vw; overflow-x: hidden; ">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9" style="height:90vh;">
+                            <div class="slider-content text-center">
+                                <h6 class="wow fadeInDown" data-wow-delay=".2s">INTRODUCING</h6>
+                                <h2 style="font-family: 'Saira Stencil One', cursive !important; letter-spacing: 3px;"
+                                    class="tlt fix" data-in-effect="fadeInLeft"><span>PENALDO</span></h2>
 
 
-                            <a href="https://t.me/penaldoeth" target="_blank" class="btn wow fadeInUp" data-wow-delay="1.2s">TELEGRAM</a>
+                                <a href="https://t.me/penaldoeth" target="_blank" class="btn wow fadeInUp"
+                                    data-wow-delay="1.2s">TELEGRAM</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
                 <style>
-                        .ball-container {
-                            display: flex;
-                            justify-content: space-between;
-                            position: relative;
-                            height: 50vh;
-                            max-width: 80vw;
-                            margin: 0 auto;
+                    .ball-container {
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+                        height: 50vh;
+                        max-width: 80vw;
+                        margin: 0 auto;
 
+                    }
+
+                    .ball {
+                        position: absolute;
+                        bottom: 450px;
+                        width: 150px;
+                        height: auto;
+                        animation: float 8s ease-in-out infinite;
+                    }
+
+                    .ball:nth-child(1) {
+                        left: 0%;
+                        animation-delay: 0s;
+                    }
+
+                    .ball:nth-child(2) {
+                        left: 20%;
+                        animation-delay: 0.6s;
+                    }
+
+                    .ball:nth-child(3) {
+                        left: 47%;
+                        animation-delay: 1.2s;
+                    }
+
+                    .ball:nth-child(4) {
+                        right: 20%;
+                        animation-delay: 1.8s;
+                    }
+
+                    .ball:nth-child(5) {
+                        right: 0%;
+                        animation-delay: 2.4s;
+                    }
+
+
+
+                    @keyframes float {
+                        0% {
+                            transform: translateY(0);
+                            opacity: 1;
                         }
 
-    .ball {
-        position: absolute;
-        bottom: 450px;
-        width: 150px;
-        height: auto;
-        animation: float 8s ease-in-out infinite;
-    }
+                        50% {
+                            transform: translateY(-50%);
+                            opacity: 0.7;
+                        }
 
-    .ball:nth-child(1) {
-        left: 0%;
-        animation-delay: 0s;
-    }
-
-    .ball:nth-child(2) {
-        left: 20%;
-        animation-delay: 0.6s;
-    }
-
-    .ball:nth-child(3) {
-        left: 47%;
-        animation-delay: 1.2s;
-    }
-
-    .ball:nth-child(4) {
-        right: 20%;
-        animation-delay: 1.8s;
-    }
-
-    .ball:nth-child(5) {
-        right: 0%;
-        animation-delay: 2.4s;
-    }
-
-
-
-    @keyframes float {
-        0% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        50% {
-            transform: translateY(-50%);
-            opacity: 0.7;
-        }
-        100% {
-            transform: translateY(-100%);
-            opacity: 0;
-        }
-    }
+                        100% {
+                            transform: translateY(-100%);
+                            opacity: 0;
+                        }
+                    }
                 </style>
-            <div class="ball-container">
-                <img class="ball" src="/ballon.png" alt="Soccer Ball">
-                <img class="ball" src="/ballon.png" alt="Soccer Ball">
-                <img class="ball" src="/ballon.png" alt="Soccer Ball">
-                <img class="ball" src="/ballon.png" alt="Soccer Ball">
-                <img class="ball" src="/ballon.png" alt="Soccer Ball">
-             
-            </div>
-        </section>
+                <div class="ball-container">
+                    <img class="ball" src="/ballon.png" alt="Soccer Ball">
+                    <img class="ball" src="/ballon.png" alt="Soccer Ball">
+                    <img class="ball" src="/ballon.png" alt="Soccer Ball">
+                    <img class="ball" src="/ballon.png" alt="Soccer Ball">
+                    <img class="ball" src="/ballon.png" alt="Soccer Ball">
+
+                </div>
+            </section>
         </div>
         <!-- features-area -->
         <div class="parallax2" data-scroll data-scroll-background>
-        <section id="about" class=" about-bg " style="height: fit-content;position: relative;">        <!-- slider-area-end -->
-  
-            <div class="overlay"  >
-            <div class="container ">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">          <br><br><br>
-                        <div class="section-title title-style-two text-center mb-60">
-                            <h2><span></span> About Us</h2>
-                        </div>
-                        <div class="slider-content text-center">
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">Pepe x Ronaldo ($PR7) PENALDO is the most goated Pepe around. The 5 time Ballon d’Or and UCL champion is hear to SIUUUUWEE with crypto degens. Combining the most hyped meme coin and the most famous footballer, PENALDO is sure to shake the space. <br> <br> <br> <br> Along with our very own interactive football streaming platform, we will incorporate crypto betting so you can watch and bet all in one place.  </p>
-                            <h3 class="wow fadeInUp" data-wow-delay="1s"></h3>
+            <section id="about" class=" about-bg " style="height: fit-content;position: relative;">
+                <!-- slider-area-end -->
 
+                <div class="overlay">
+                    <div class="container ">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8"> <br><br><br>
+                                <div class="section-title title-style-two text-center mb-60">
+                                    <h2><span></span> About Us</h2>
+                                </div>
+                                <div class="slider-content text-center">
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s">Pepe x Ronaldo ($PR7) PENALDO is the
+                                        most goated Pepe around. The 5 time Ballon d’Or and UCL champion is hear to
+                                        SIUUUUWEE with crypto degens. Combining the most hyped meme coin and the most
+                                        famous footballer, PENALDO is sure to shake the space. <br> <br> <br> <br> Along
+                                        with our very own interactive football streaming platform, we will incorporate
+                                        crypto betting so you can watch and bet all in one place. </p>
+                                    <h3 class="wow fadeInUp" data-wow-delay="1s"></h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="section-title title-style-two text-center">
+                                    <h2><span></span>Goalazo</h2>
+
+                                </div>
+                                <div class="slider-content text-center" style="margin-bottom: 50px;">
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s">$PR7 holders are granted access to
+                                        live-streaming fútbol matches on our interactive dapp. </p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="1.5s">All investors are eligible to compete
+                                        in our exclusive fantasy fútbol league for the grand prize pool and other
+                                        rewards!</p>
+                                    <p class="wow fadeInUp" data-wow-delay="2s">In addition, a lottery will take place
+                                        for ALL holders to win the ultimate World Cup Final Grand Prize.</p>
+                                    <p class="wow fadeInUp" data-wow-delay="2.5s">Lining up to be an exciting contestant
+                                        in the memecoin space, Penaldo is sure to have fans on the edge of their seats!
+                                    </p>
+                                    <a href="https://t.me/penaldoeth" target="_blank" class="btn wow fadeInUp"
+                                        data-wow-delay="2.5s">TELEGRAM</a>
+                                    <a href="https://twitter.com/penaldoeth" target="_blank" class="btn wow fadeInUp"
+                                        data-wow-delay="2.5s">TWITTER</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="section-title title-style-two text-center">
-                            <h2><span></span>Goalazo</h2>
 
-                        </div>
-                        <div class="slider-content text-center" style="margin-bottom: 50px;">
-                            <p class="wow fadeInUp" data-wow-delay="0.5s">$PR7 holders are granted access to live-streaming fútbol matches on our interactive dapp. </p>
-                    
-                            <p class="wow fadeInUp" data-wow-delay="1.5s">All investors are eligible to compete in our exclusive fantasy fútbol league for the grand prize pool and other rewards!</p>
-                            <p class="wow fadeInUp" data-wow-delay="2s">In addition, a lottery will take place for ALL holders to win the ultimate World Cup Final Grand Prize.</p>
-                            <p class="wow fadeInUp" data-wow-delay="2.5s">Lining up to be an exciting contestant in the memecoin space, Penaldo is sure to have fans on the edge of their seats!</p>
-                            <a href="https://t.me/penaldoeth" target="_blank" class="btn wow fadeInUp" data-wow-delay="2.5s">TELEGRAM</a>
-                            <a href="https://twitter.com/penaldoeth" target="_blank" class="btn wow fadeInUp" data-wow-delay="2.5s">TWITTER</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <!-- features-area-end -->
-     
-        <!-- features-area -->
+                <!-- features-area-end -->
+
+                <!-- features-area -->
 
 
-    </section>
+            </section>
         </div>
         <!-- features-area-end -->
 
         <div class="parallax3" data-scroll data-scroll-background>
-        <!-- features-area -->
-        <section id="tokenomics" class="features-area features-bg" >
-            <div class="overlay" style="height: 100vh;"  >
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="section-title title-style-two text-center mb-60">
-                            <h2><span></span> Tokenomics</h2>
+            <!-- features-area -->
+            <section id="tokenomics" class="features-area features-bg">
+                <div class="overlay" style="height: 100vh;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="section-title title-style-two text-center mb-60">
+                                    <h2><span></span> Tokenomics</h2>
+                                </div>
+                                <div class="slider-content text-center">
+                                    <h3 class="wow fadeInUp" data-wow-delay="0.5s">Total Supply: 1,000,000,000 $PR7</h3>
+                                    <h3 class="wow fadeInUp" data-wow-delay="1s"><img src="/s.svg" class="wiwi" alt="">
+                                        RENNOUNCED OWNERSHIP</h3>
+                                    <h3 class="wow fadeInUp" data-wow-delay="1.5s">Liquidity Burned @ 100k mcap</h3>
+                                    <h3 class="wow fadeInUp" data-wow-delay="1.5s">Buy/Sell Tax : 0%/3%</h3>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="slider-content text-center">
-                            <h3 class="wow fadeInUp" data-wow-delay="0.5s">Total Supply: 1,000,000,000 $PR7</h3>
-                            <h3 class="wow fadeInUp" data-wow-delay="1s"><img src="/s.svg" class="wiwi" alt=""> RENNOUNCED OWNERSHIP</h3>
-                            <h3 class="wow fadeInUp" data-wow-delay="1.5s">Liquidity Burned @ 100k mcap</h3>
-                            <h3 class="wow fadeInUp" data-wow-delay="1.5s">Buy/Sell Tax : 0%/3%</h3>
-                       
+                        <style>
+                            .wiwii {
+                                height: 50px;
+                                width: 50px;
+                            }
+                        </style>
+                        <div class="fact-area pt-90">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <div class="fact-item">
+                                        <div class="fact-icon">
+                                            <img class="wiwii" src="img/bg/cl.png" alt="">
+                                        </div>
+                                        <div class="fact-content">
+                                            <h2><span class="odometer" data-count="97">0</span>%</h2>
+                                            <h2>Liquidity</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <div class="fact-item">
+                                        <div class="fact-icon">
+                                            <img class="wiwii" src="img/bg/cl.png" alt="">
+                                        </div>
+                                        <div class="fact-content">
+                                            <h2><span class="odometer" data-count="2">0</span>%</h2>
+                                            <h2>Team Tokens</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <div class="fact-item">
+                                        <div class="fact-icon">
+                                            <img class="wiwii" src="img/bg/cl.png" alt="">
+                                        </div>
+                                        <div class="fact-content">
+                                            <h2><span class="odometer" data-count="1">0</span>%</h2>
+                                            <h2>Marketing</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <style>
-                    .wiwii {
-                        height:50px;
-                        width:50px;
-                    }
-                </style>
-                <div class="fact-area pt-90">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img  class="wiwii" src="img/bg/cl.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="97">0</span>%</h2>
-                                    <h2>Liquidity</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img  class="wiwii" src="img/bg/cl.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="2">0</span>%</h2>
-                                    <h2>Team Tokens</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img  class="wiwii" src="img/bg/cl.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="1">0</span>%</h2>
-                                    <h2>Marketing</h2>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
+            </section>
         </div>
         <!-- features-area-end -->
         <div class="parallax3" data-scroll data-scroll-background>
-        <!-- features-area -->
-        <section id="roadmap" class="features-area features-bg ">
-            <div class="overlay"  >
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="section-title title-style-two text-center mb-60">
-                            <h2><span>PENALDO</span> Roadmap</h2>
+            <!-- features-area -->
+            <section id="roadmap" class="features-area features-bg ">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="section-title title-style-two text-center mb-60">
+                                    <h2><span>PENALDO</span> Roadmap</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="features-item mb-30">
+                                    <div class="features-head mb-35">
+                                        <div class="product-tag"><a>PHASE 1</a></div>
+                                        <div class="features-list-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt="">Build Website/Token
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Stealth Launch on
+                                                            Ethereum</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Grow Community +
+                                                            Socials</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Finalize Influencer
+                                                            Partnerships</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Initial Marketing
+                                                            Campaign</h4>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="features-item mb-30">
+                                    <div class="features-head mb-35">
+                                        <div class="product-tag"><a>PHASE 2</a></div>
+                                        <div class="features-list-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <style>
+                                                        .wiwi {
+                                                            height: 30px;
+                                                            width: 30px;
+                                                            margin: 0 5px 0 0;
+                                                        }
+                                                    </style>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Website Update v2
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Release Whitepaper
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> CMC and CG
+                                                            applications</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt="">Dextools Trending</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt="">Techrate Audit</h4>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="features-item ">
+                                    <div class="features-head mb-35">
+                                        <div class="product-tag"><a>PHASE 3</a></div>
+                                        <div class="features-list-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Merchandise and
+                                                            Apparel</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Penaldo NFT
+                                                            Collection</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt=""> Betting platform live
+                                                        </h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="features-list-img">
+                                                    </div>
+                                                    <div class="features-list-content">
+                                                        <h4><img src="/s.svg" class="wiwi" alt="">Merchandise and
+                                                            Apparel</h4>
+                                                    </div>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="features-item mb-30">
-                            <div class="features-head mb-35">
-                                <div class="product-tag"><a>PHASE 1</a></div>
-                                <div class="features-list-wrap">
-                                    <ul>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt="">Build Website/Token </h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt="">  Stealth Launch on Ethereum</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Grow Community + Socials</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Finalize Influencer Partnerships</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Initial Marketing Campaign</h4>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="features-item mb-30">
-                            <div class="features-head mb-35">
-                                <div class="product-tag"><a>PHASE 2</a></div>
-                                <div class="features-list-wrap">
-                                    <ul>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <style>
-                                                .wiwi {
-                                                    height: 30px;
-                                                    width: 30px;
-                                                    margin: 0 5px 0 0;
-                                                }
-                                            </style>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Website Update v2 </h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt="">  Release Whitepaper</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> CMC and CG applications</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt="">Dextools Trending</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt="">Techrate Audit</h4>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="features-item ">
-                            <div class="features-head mb-35">
-                                <div class="product-tag"><a>PHASE 3</a></div>
-                                <div class="features-list-wrap">
-                                    <ul>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Merchandise and Apparel</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Penaldo NFT Collection</h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt=""> Betting platform live </h4>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="features-list-img">
-                                            </div>
-                                            <div class="features-list-content">
-                                                <h4><img src="/s.svg" class="wiwi" alt="">Merchandise and Apparel</h4>
-                                            </div>
-                                        </li>
-
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <!-- features-area-end -->
-        </div>
+            </section>
+            <!-- features-area-end -->
+ 
     </main>
-
-    <footer style="display: none;" >
-        <div class="footer-top footer-bg">
-
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="footer-widget mb-50">
-                            <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
-                            </div>
-                            <div class="footer-text">
-                                <h4>Disclaimer</h4>
-                                <div class="footer-contact">
-                                    <p>When purchasing this token you will agree to the fullest extent that you have done research considering cryptocurrency DEFI- space and to not hold this token or its affiliated persons from and against all losses that
-                                        arise from or relate to your purchase. We as a team will do our best to work for this token and it's value.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-sm-6">
-                        <div class="footer-widget mb-50">
-                            <div class="fw-title mb-35">
-                                <h5>Useful links:</h5>
-                            </div>
-                            <div class="fw-link">
-                                <ul>
-                                    <li><a href="https://etherscan.io/token/0x2050a0f412bb864bb31a73716f1df23cdfc20c3a" target="_blank">$SIUUKA Contract</a></li>
-                                    <li><a href="https://app.uniswap.org/#/swap?outputCurrency=0x2050A0F412Bb864bb31A73716f1DF23CDFc20c3A" target="_blank">Buy $SIUUKA</a></li>
-                                    <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0xb174f7be40d380a4698f76252ac0bfe8d179a61a" target="_blank">Chart</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="footer-widget mb-50">
-                            <div class="fw-title mb-35">
-                                <h5>Follow us</h5>
-                            </div>
-                            <div class="footer-social">
-                                <ul>
-                                    <li><a href="https://t.me/tsukaworldcup" target="_blank"><i class="fab fa-telegram"></i></a></li>
-                                    <li><a href="https://www.twitter.com/TsukaWCup" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer-widget mb-50">
-                            <div class="footer-newsletter">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-fire"><img src="img/images/footer_fire.png" alt=""></div>
-            <div class="footer-fire footer-fire-right"><img src="img/images/footer_fire.png" alt=""></div>
-        </div>
-        <div class="copyright-wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="copyright-text">
-                            <p>Copyright © 2022 <a href="index.htm">PENALDO</a>. Designed with <i class="fa fa-heart"></i> by <a href="https://t.me/anonymcreator" target="_blank">PepeDev</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<style>
+    .shadow-host-companion {
+        display: none;
+    }
+</style>
 
 
-
+    <script src="https://unpkg.com/scroll-out@2.2.5/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            cssProps: {
+                "background-position-y": true
+            }
+        });
+    </script>
 
     <!-- JS here -->
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
@@ -593,14 +570,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/scroll-out@2.2.5/dist/scroll-out.min.js"></script>
-    <script>
-        ScrollOut({
-            cssProps: {
-                "background-position-y": true
-            }
-        });
-    </script>
+
 </body>
 
 </html>
