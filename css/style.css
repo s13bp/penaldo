@@ -307,7 +307,7 @@ label {
 }
 
 .btn.transparent-btn:hover {
-    border: 2px solid #e4a101;
+    border: 2px solid #31ff2a;
     color: #1c1121;
 }
 
@@ -335,7 +335,7 @@ label {
     bottom: 0;
     border-radius: 0;
     left: auto;
-    background-color: #e4a101;
+    background-color: #31ff2a;
 }
 
 .btn.btn-style-two::after {
@@ -352,7 +352,7 @@ label {
     bottom: 0;
     border-radius: 0;
     left: auto;
-    background-color: #e4a101;
+    background-color: #31ff2a;
 }
 
 .btn.btn-style-two:hover::before {
@@ -366,7 +366,7 @@ label {
 /* scrollUp */
 
 #scrollUp {
-    background: #E4A101;
+    background: #31ff2a;
     height: 40px;
     width: 40px;
     right: 50px;
@@ -506,7 +506,7 @@ ul.minicart .cart-content a:hover,
 .newsletter-form button:hover,
 .fw-link ul li a:hover,
 .copyright-text p a {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .header-top-action ul {
@@ -554,7 +554,7 @@ ul.minicart .cart-content a:hover,
     height: 35px;
     line-height: 35px;
     padding: 0 18px 0 0;
-    border-top: 1px solid #e4a101;
+    border-top: 1px solid #31ff2a;
 }
 
 .header-user-login>a i {
@@ -574,6 +574,8 @@ ul.minicart .cart-content a:hover,
     background-position: right center;
     background-size: cover;
     position: relative;
+    max-height: 100px;
+    margin-top: -10px;
 }
 
 .main-menu nav {
@@ -633,7 +635,7 @@ ul.minicart .cart-content a:hover,
     content: "";
     position: absolute;
     height: 3px;
-    background: #e4a101;
+    background: #31ff2a;
     right: 40px;
     left: 0;
     bottom: 0;
@@ -1315,7 +1317,7 @@ ul.minicart .cart-price .new {
 .shop-area.black-bg .product-cart-action a:hover,
 .latest-match-box .tournament-schedule-meta a:hover,
 .features-item .features-list-content .product-tag a:hover::before {
-    background: #e4a101;
+    background: #31ff2a;
 }
 
 /* 4. Breadcrumb */
@@ -1936,7 +1938,7 @@ ul.minicart .cart-price .new {
 .latest-games-active.owl-carousel .owl-nav button:hover,
 .product-active .slick-arrow:hover,
 .testimonial-active.owl-carousel .owl-nav button:hover {
-    border-color: #e4a101;
+    border-color: #31ff2a;
 }
 
 .home-four-title h2 {
@@ -2559,7 +2561,7 @@ ul.minicart .cart-price .new {
     top: 50%;
     height: 20px;
     width: 20px;
-    border: 1px solid #e4a101;
+    border: 1px solid #31ff2a;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     transition: .3s linear;
@@ -2571,7 +2573,7 @@ ul.minicart .cart-price .new {
 }
 
 .released-game-active .slick-dots li.slick-active button {
-    background: #e4a101;
+    background: #31ff2a;
 }
 
 /* 10. Game Manage */
@@ -2598,7 +2600,7 @@ ul.minicart .cart-price .new {
 }
 
 .coming-match-item {
-    border-top: 5px solid #e4a101;
+    border-top: 5px solid #31ff2a;
     background-color: rgb(33, 19, 44);
     box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.34);
 }
@@ -2639,7 +2641,7 @@ ul.minicart .cart-price .new {
 
 .match-rating i {
     font-size: 12px;
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .match-rating {
@@ -2983,7 +2985,7 @@ ul.minicart .cart-price .new {
 }
 
 .tournament-schedule-meta a:hover {
-    border: 1px solid #e4a101;
+    border: 1px solid #31ff2a;
     color: #1c1121;
 }
 
@@ -3359,16 +3361,44 @@ ul.minicart .cart-price .new {
 }
 
 /* 15. Features */
-
+.features-bg::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/bg/thirdbanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 .features-bg {
-    background-image: url(../img/bg/features_bg.jpg);
+    background-image: url(../img/bg/thirdbanner.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-
+.about-bg::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/bg/pepejuve.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 .about-bg {
-    background-image: url(../img/bg/about_bg.jpg);
+    background-image: url(../img/bg/pepejuve.png);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -3454,11 +3484,19 @@ ul.minicart .cart-price .new {
 }
 
 .features-list-content .product-tag a::before {
-    background: #3a3042;
+    background: #a9a9a9;
 }
-
+.features-item  {
+    background-color: #d70000;;
+    transition: all .5s ease-in-out;
+}
+.features-item:hover  {
+    background-color: rgb(33, 16, 16);
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .features-item .features-list-content .product-tag a:hover {
-    color: #1d1227;
+    color: 
 }
 
 .features-list-img {
@@ -3545,7 +3583,7 @@ ul.minicart .cart-price .new {
 .product-cart-action a:hover,
 .shop-area.black-bg .product-cart-action a:hover {
     color: #1c1121;
-    border-color: #e4a101;
+    border-color: #31ff2a;
 }
 
 .product-active .slick-arrow {
@@ -3589,8 +3627,8 @@ ul.minicart .cart-price .new {
 }
 
 .shop-area.black-bg .product-active .slick-arrow:hover {
-    color: #e4a101;
-    border-color: #e4a101;
+    color: #31ff2a;
+    border-color: #31ff2a;
 }
 
 .accessories-thumb img {
@@ -3736,7 +3774,7 @@ ul.minicart .cart-price .new {
     z-index: -1;
     right: 0;
     margin: 0 auto;
-    background: #e4a101;
+    background: #31ff2a;
     box-shadow: 0px 1px 8.37px 0.63px rgba(114, 113, 113, 0.18);
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -3767,7 +3805,7 @@ ul.minicart .cart-price .new {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #e4a101;
+    background: #31ff2a;
     opacity: 0;
     transition: .3s linear;
 }
@@ -4148,7 +4186,7 @@ ul.minicart .cart-price .new {
     z-index: -1;
     right: 0;
     margin: 0 auto;
-    background: #e4a101;
+    background: #31ff2a;
     box-shadow: 0px 1px 8.37px 0.63px rgba(114, 113, 113, 0.18);
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -4165,7 +4203,7 @@ ul.minicart .cart-price .new {
 }
 
 .blog-list-post-content h2 a:hover {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .blog-list-post-content .blog-meta ul {
@@ -4224,7 +4262,7 @@ ul.minicart .cart-price .new {
 
 .blog-list-post-bottom ul li>a i {
     margin-left: 10px;
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .blog-list-post-bottom ul li:last-child {
@@ -4239,7 +4277,7 @@ ul.minicart .cart-price .new {
 }
 
 .blog-list-post-bottom ul li a:hover {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .blog-sidebar {
@@ -4263,7 +4301,7 @@ ul.minicart .cart-price .new {
 }
 
 .sidebar-widget-title h4 span {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .sidebar-widget-title h4::before,
@@ -4274,7 +4312,7 @@ ul.minicart .cart-price .new {
     top: 0;
     width: 3px;
     height: 22px;
-    background: #e4a101;
+    background: #31ff2a;
 }
 
 .sidebar-widget-title h4::after {
@@ -4401,7 +4439,7 @@ ul.minicart .cart-price .new {
 }
 
 .sidebar-trend-match-action span:last-child {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .sidebar-trend-match-action span:nth-child(2) {
@@ -4449,7 +4487,7 @@ ul.minicart .cart-price .new {
 }
 
 .sidebar-tag-list ul li a:hover {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .blog-details-wrap .blog-list-post-content {
@@ -4483,7 +4521,7 @@ ul.minicart .cart-price .new {
     font-weight: 700;
     line-height: 26px;
     padding-left: 20px;
-    border-left: 4px solid #e4a101;
+    border-left: 4px solid #31ff2a;
 }
 
 .blog-details-list li {
@@ -4536,7 +4574,7 @@ ul.minicart .cart-price .new {
 }
 
 .blog-details-wrap .blog-list-post-bottom ul li>i {
-    color: #e4a101;
+    color: #31ff2a;
     font-size: 12px;
     margin-right: 5px;
 }
@@ -4545,7 +4583,7 @@ ul.minicart .cart-price .new {
 .blog-details-wrap .blog-list-post-bottom ul li .blog-post-share a:hover,
 .comment-avatar-info h4 a:hover,
 .community-post-content span a:hover {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .sidebar-widget-title.blog-details-title h4 {
@@ -4600,7 +4638,7 @@ ul.minicart .cart-price .new {
 
 .comment-reply a {
     font-size: 12px;
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .comment-text p {
@@ -4913,7 +4951,7 @@ ul.minicart .cart-price .new {
 
 .testimonial-rating i {
     font-size: 14px;
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .testimonial-content p {
@@ -5055,7 +5093,7 @@ ul.minicart .cart-price .new {
     z-index: -1;
     right: 0;
     margin: 0 auto;
-    background: #e4a101;
+    background: #31ff2a;
     box-shadow: 0px 1px 8.37px 0.63px rgba(114, 113, 113, 0.18);
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -5092,7 +5130,7 @@ ul.minicart .cart-price .new {
 }
 
 .community-wrap .community-bell a {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 .community-wrap .community-bell::before {
@@ -5182,9 +5220,9 @@ ul.minicart .cart-price .new {
 }
 
 .community-sidebar-social ul li a:hover {
-    background: #e4a101;
+    background: #31ff2a;
     color: #fff;
-    border-color: #e4a101;
+    border-color: #31ff2a;
 }
 
 .community-sidebar-game ul li {
@@ -5224,7 +5262,7 @@ ul.minicart .cart-price .new {
 
 .sidebar-new-game-content h5 a:hover,
 .contact-form button:hover {
-    color: #e4a101;
+    color: #31ff2a;
 }
 
 /* 24. Contact */
@@ -5460,12 +5498,12 @@ ul.minicart .cart-price .new {
 }
 
 .newsletter-form button::before {
-    border-color: transparent transparent #e4a101 transparent;
+    border-color: transparent transparent #31ff2a transparent;
     transition: .3s linear;
 }
 
 .newsletter-form button::after {
-    border-color: #e4a101 transparent transparent transparent;
+    border-color: #31ff2a transparent transparent transparent;
     transition: .3s linear;
 }
 

@@ -59,29 +59,18 @@
                         <div class="main-menu">
                             <nav style="max-width: 100vw; overflow-x: hidden;">
                                 <div class="logo">
-                                    <a href="index.html"><img class="sese" src="img/logo/logo.jpg" alt="Logo"></a>
+                                    <a href="index.html"><img class="sese" src="img/logo/logo.png" alt="Logo"></a>
                                 </div>
                                 <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                     <ul>
-                                        <li class="show"><a href="#about">PENALDO</a>
-                                            <ul class="submenu">
-                                                <li><a href="#about">About</a></li>
-                                                <li><a href="#tokenomics">Tokenomics</a></li>
-                                                <li class="#roadmap"><a href="#roadmap">Roadmap</a></li>
-                                            </ul>
+                                        <li class="show"><a href="#about">Roadmap</a>
+                                   
                                         </li>
-                                        <li><a href="#">Socials</a>
-                                            <ul class="submenu">
-                                                <li><a href="https://t.me/tsukaworldcup" target="_blank">Telegram</a></li>
-                                                <li><a href="https://www.twitter.com/TsukaWCup" target="_blank">Twitter</a></li>
-                                            </ul>
+                                        <li><a href="#">About</a>
+                                   
                                         </li>
-                                        <li><a href="#about">$SIUUKA</a>
-                                            <ul class="submenu">
-                                                <li><a href="https://app.uniswap.org/#/swap?outputCurrency=0x2050A0F412Bb864bb31A73716f1DF23CDFc20c3A" target="_blank">BUY ON UNISWAP</a></li>
-                                                <li><a href="https://etherscan.io/token/0x2050a0f412bb864bb31a73716f1df23cdfc20c3a" target="_blank">CONTRACT</a></li>
-                                                <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0xb174f7be40d380a4698f76252ac0bfe8d179a61a" target="_blank">CHART</a></li>
-                                            </ul>
+                                        <li><a href="#about">Tokenomics</a>
+                                    
                                         </li>
                                     </ul>
                                 </div>
@@ -110,7 +99,7 @@
     <main>
 
         <!-- slider-area -->
-        <section id="about" class="slider-area slider-bg" style="max-width: 100vw; overflow-x: hidden;">
+        <section id="about" class="slider-area slider-bg" style="max-width: 100vw; overflow-x: hidden; ">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-9" style="height:90vh;">
@@ -119,72 +108,76 @@
                             <h2   style="font-family: 'Saira Stencil One', cursive !important; letter-spacing: 3px;"  class="tlt fix" data-in-effect="fadeInLeft"><span>PENALDO</span></h2>
 
 
-                            <a href="https://t.me/penaldoeth" target="_blank" class="btn wow fadeInUp" data-wow-delay="1.2s">TELEGRAM</a>
+                           <a  href="https://t.me/penaldoeth" target="_blank">
+                             <button class="btn" > 
+                                Telegram
+                             </button>
+                           </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <style>
-                    .ball-container {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    height: 50vh;
-    max-width: 80vw;
-    margin: 0 auto;
+                <style>
+                        .ball-container {
+                            display: flex;
+                            justify-content: space-between;
+                            position: relative;
+                            height: 50vh;
+                            max-width: 80vw;
+                            margin: 0 auto;
 
-}
+                        }
 
-.ball {
-    position: absolute;
-    bottom: 450px;
-    width: 150px;
-    height: auto;
-    animation: float 8s ease-in-out infinite;
-}
-
-.ball:nth-child(1) {
-    left: 0%;
-    animation-delay: 0s;
-}
-
-.ball:nth-child(2) {
-    left: 20%;
-    animation-delay: 0.6s;
-}
-
-.ball:nth-child(3) {
-    left: 47%;
-    animation-delay: 1.2s;
-}
-
-.ball:nth-child(4) {
-    right: 20%;
-    animation-delay: 1.8s;
-}
-
-.ball:nth-child(5) {
-    right: 0%;
-    animation-delay: 2.4s;
-}
-
-
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
+    .ball {
+        position: absolute;
+        bottom: 450px;
+        width: 150px;
+        height: auto;
+        animation: float 8s ease-in-out infinite;
     }
-    50% {
-        transform: translateY(-50%);
-        opacity: 0.7;
+
+    .ball:nth-child(1) {
+        left: 0%;
+        animation-delay: 0s;
     }
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
+
+    .ball:nth-child(2) {
+        left: 20%;
+        animation-delay: 0.6s;
     }
-}
-            </style>
+
+    .ball:nth-child(3) {
+        left: 47%;
+        animation-delay: 1.2s;
+    }
+
+    .ball:nth-child(4) {
+        right: 20%;
+        animation-delay: 1.8s;
+    }
+
+    .ball:nth-child(5) {
+        right: 0%;
+        animation-delay: 2.4s;
+    }
+
+
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-50%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+    }
+                </style>
             <div class="ball-container">
                 <img class="ball" src="/ballon.png" alt="Soccer Ball">
                 <img class="ball" src="/ballon.png" alt="Soccer Ball">
@@ -196,7 +189,7 @@
         </section>
 
         <!-- features-area -->
-        <section id="about" class="features-area about-bg " style="height: 90vh;">        <!-- slider-area-end -->
+        <section id="about" class=" about-bg " style="height: 90vh;">        <!-- slider-area-end -->
   
             <div class="overlay"  >
             <div class="container ">
@@ -218,14 +211,14 @@
         <!-- features-area-end -->
 
         <!-- features-area -->
-        <section id="about" class="features-area about-bg ">
+        <section  class=" about-bg ">
         <div class="overlay" >
 
          
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8"><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <div class="section-title title-style-two text-center mb-60">
+                    <div class="col-xl-6 col-lg-8"><br><br><br><br>
+                        <div class="section-title title-style-two text-center mb-20">
                             <h2><span></span>Goalazo</h2>
 
                         </div>
@@ -247,7 +240,8 @@
 
 
         <!-- features-area -->
-        <section id="tokenomics" class="features-area features-bg pt-120 pb-70">
+        <section id="tokenomics" class="features-area features-bg">
+            <div class="overlay"  >
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
@@ -301,11 +295,13 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         <!-- features-area-end -->
 
         <!-- features-area -->
-        <section id="roadmap" class="features-area features-bg pt-120 pb-70">
+        <section id="roadmap" class="features-area features-bg ">
+            <div class="overlay"  >
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
@@ -403,7 +399,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
-                        <div class="features-item mb-30">
+                        <div class="features-item ">
                             <div class="features-head mb-35">
                                 <div class="product-tag"><a>PHASE 3</a></div>
                                 <div class="features-list-wrap">
@@ -443,6 +439,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <!-- features-area-end -->

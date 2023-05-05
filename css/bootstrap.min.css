@@ -2600,6 +2600,7 @@ select.form-control-lg:not([size]):not([multiple]) {
     user-select: none;
     border: 1px solid transparent;
     padding: .375rem .75rem;
+    background-color: limegreen;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
@@ -2608,7 +2609,8 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .btn:focus,
 .btn:hover {
-    text-decoration: none
+    text-decoration: none;
+    background-color:maroon ;
 }
 
 .btn.focus,
