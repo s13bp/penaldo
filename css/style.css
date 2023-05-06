@@ -1427,7 +1427,7 @@ ul.minicart .cart-price .new {
 
 
 .slider-content {
-    margin-top: 200px;
+   
 }
 .slider-content h6 {
     font-size: 22px;
@@ -1477,7 +1477,8 @@ ul.minicart .cart-price .new {
     letter-spacing: -3px;
     text-transform: uppercase;
     text-shadow: 2px 2px #000;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+
 }
 
 .slider-content h2 .word1>span {
