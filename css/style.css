@@ -1705,6 +1705,25 @@ ul.minicart .cart-price .new {
     background-size: cover;
     padding: 205px 0 205px;
 }
+.slider-bg::before {
+
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('../img/slider/slider_bg02.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    
+}
 
 .home-four-slider .custom-container-two {
     position: relative;
@@ -3334,6 +3353,7 @@ ul.minicart .cart-price .new {
     background-color: rgb(29, 18, 39);
     box-shadow: 0px 5px 27px 0px rgba(17, 8, 23, 0.2);
     padding: 45px 35px;
+    height: 100%;
 }
 
 .features-item .product-tag a {
